@@ -1,0 +1,70 @@
+.TH "JAVACC" "1" 
+.SH "NAME" 
+javacc \(em a java compiler compiler 
+.SH "SYNOPSIS" 
+.PP 
+\fBjavacc\fR [option-settings]  [inputfile]  
+.PP 
+\fBjjtree\fR [option-settings]  [inputfile]  
+.PP 
+\fBjjdoc\fR [inputfile]  
+.SH "DESCRIPTION" 
+.PP 
+This manual page documents briefly the 
+\fBjavacc\fR, \fBjjtree\fR and \fBjjdoc\fR commands. 
+.PP 
+This manual page was written for the \fBDebian\fP distribution 
+because the original program does not have a manual page. 
+.PP 
+\fBjavacc\fR is a parser generator for use with Java 
+.PP 
+\fBjjtree\fR is a tree builder for javacc 
+.PP 
+\fBjjdoc\fR is a documentation generator javacc 
+.SH "OPTIONS" 
+.PP 
+\fBjavacc\fR, \fBjjtree\fR or 
+\fBjjdoc\fR without any argument prints a small help 
+with the list of available options. 
+.PP 
+"option-settings" is a sequence of settings separated 
+by spaces. Each option setting must be of one of the following forms: 
+.PP 
+\fB-optionname=value\fP (e.g. \-STATIC=false) 
+.PP 
+\fB-optionname:value\fP (e.g. \-STATIC:false) 
+.PP 
+\fB-optionname\fP       (equivalent to \-optionname=true.  e.g., \-STATIC) 
+.PP 
+\fB-NOoptionname\fP     (equivalent to \-optionname=false. e.g., \-NOSTATIC) 
+.PP 
+Option settings are not case-sensitive, so one can say 
+\fB-nOsTaTiC\fP instead of \fB-NOSTATIC\fP. 
+Option values must be appropriate for the corresponding option, and 
+must be either an integer or a string value. 
+.PP 
+For a list of available options, please refer to the command's 
+internal help. 
+.SH "EXAMPLE" 
+.PP 
+.ft B 
+% javacc \-STATIC=false \-LOOKAHEAD:2 \-debug_parser mygrammar.jj 
+.ft 
+.PP 
+.ft B 
+% jjtree \-STATIC=false mygrammar.jjt 
+.ft 
+.PP 
+.ft B 
+% jjdoc mygrammar.jj 
+.ft 
+.SH "AUTHOR" 
+.PP 
+This manual page was written by Nicolas Sabouret nico@debian.org for 
+the \fBDebian\fP system (but may be used by others).  Permission is 
+granted to copy, distribute and/or modify this document under 
+the terms of the GNU Free Documentation 
+License, Version 1.1 or any later version published by the Free 
+Software Foundation; with no Invariant Sections, no Front-Cover 
+Texts and no Back-Cover Texts. 
+.\" created by instant / docbook-to-man 

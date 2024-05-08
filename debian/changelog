@@ -1,9 +1,39 @@
-javacc (5.0-8.1) unstable; urgency=medium
+javacc (7.0.12-1) unstable; urgency=medium
 
-  * Non maintainer upload by the Reproducible Builds team.
-  * No source change upload to rebuild on buildd with .buildinfo files.
+  * New upstream release
 
- -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 14:52:28 +0100
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 07 Dec 2022 23:27:10 +0100
+
+javacc (7.0.11-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 20 May 2022 13:01:25 +0200
+
+javacc (6.1.3-1) unstable; urgency=low
+
+  [ Benjamin Mesing ]
+  * Team upload.
+  * New upstream release (Closes: #732752) 
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 16 May 2022 00:45:30 +0200
+
+javacc (5.0-9) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Use secure URI in Homepage field.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Emmanuel Bourg ]
+  * Standards-Version updated to 4.6.1
+  * Switch to debhelper level 13
+  * Fixed the watch file
+  * Do not run the tests if the nocheck option is specified
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 13 May 2022 07:55:56 +0200
 
 javacc (5.0-8) unstable; urgency=medium
 
@@ -159,7 +189,7 @@ javacc (3.2+0-2) unstable; urgency=low
 
 javacc (3.2+0-1) unstable; urgency=low
 
-  * Build-depends on docbook-to-man 
+  * Build-depends on docbook-to-man
   * Moved to main (closes: #225484)
     See README.Debian for more information
     Thanks to Josh Triplett for his patch
@@ -180,4 +210,3 @@ javacc (3.1-1) unstable; urgency=low
   * Initial Release (closes: #201350)
 
  -- Nicolas Sabouret <nico@debian.org>  Tue, 15 Jul 2003 10:21:45 +0200
-

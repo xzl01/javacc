@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: JavaCC
 Upstream-Contact: Sreenivasa Viswanadha <sreeni@dev.java.net>
 Source: https://github.com/javacc/javacc
